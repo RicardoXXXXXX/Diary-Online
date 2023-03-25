@@ -219,10 +219,10 @@ hr {
   width: 62rem;
   height: 35rem;
 }
-
+/* 
 .mySlides {
   display: none;
-}
+} */
 
 /* Slideshow container */
 .slideshow-container {
@@ -238,14 +238,17 @@ hr {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 1rem;
+  margin-top: -1.2rem;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.1rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.prev {
+  right: 96%;
 }
 
 /* Position the "next button" to the right */
