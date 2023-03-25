@@ -1,0 +1,341 @@
+/* The overall style*/
+body {
+  text-align: center;
+  bottom: 0;
+  margin: 0 0;
+}
+
+body p {
+  text-align: justify;
+  margin: 0 0;
+}
+hr {
+  margin: 0 0;
+}
+
+.content {
+  padding: 1vh 20vw;
+  font-size: 1.2rem;
+}
+
+.content h1 {
+  padding-top: 2vh;
+  margin-top: 0;
+}
+
+/* Style of nav bar */
+.container {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.container a {
+  margin-left: 1vw;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: 0;
+  margin-bottom: 0;
+  font-size: medium;
+  letter-spacing: 0.4rem;
+  background-color: #e9edc9;
+}
+.navbar a {
+  text-decoration: none;
+  color: #4e6e81;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  float: left;
+  margin-right: 30vw;
+  padding-left: 10vw;
+}
+
+/* Style of About Me */
+#hobbies {
+  padding: 1vh 20vw;
+  font-size: 1.2rem;
+  min-height: 70vh;
+}
+
+#hb-content1 {
+  margin: 1vh 0 7vh 0;
+}
+
+#hb-content2 {
+  margin: 7vh 0 2vh 0;
+}
+
+#img1 {
+  float: left;
+  margin: 1vh 2vw 1vh 0;
+}
+
+#img2 {
+  float: left;
+  margin: 1vh 2vw 0 0;
+}
+
+#img3 {
+  margin: 0 0 0 2vw;
+  float: right;
+}
+
+/* Style of forms */
+.content-form {
+  padding: 7vh 25vw 3rem;
+  min-height: 89vh;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.information-part1 {
+  background-color: #fefae0;
+}
+
+.information-part2 {
+  background-color: #fefbe9;
+}
+
+.information-part2 ul {
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 1vh;
+}
+
+/* Will be used later*/
+/* .edit-btn {
+  font-size: 1.2rem;
+  border-width: 0;
+  margin: 5vh 0 0;
+} */
+
+.btn-expand {
+  border-color: transparent;
+  color: #00204a;
+  background-color: #93bfcf;
+  font-size: 1.7rem;
+  padding-bottom: 0.1rem;
+  border-width: 0;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.btn-expand:hover {
+  background-color: #353935;
+  color: aliceblue;
+}
+
+.feedback-form {
+  border: #7b8fa1;
+  border-radius: 20px;
+  box-shadow: #fefbe9;
+  border-style: groove;
+  border-width: 0.1rem;
+  padding: 3vh 5vw;
+}
+
+.content-map {
+  padding: 0 1vw 0;
+  min-height: 88vh;
+  padding-top: 7vh;
+  padding-bottom: 3rem;
+  font-size: 1rem;
+}
+
+/* Style of source log table */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.table th {
+  background-color: #f2f2f2;
+}
+
+/* Style of list */
+.content-list {
+  padding: 0 35vw 0;
+  min-height: 89vh;
+  padding-top: 7vh;
+  padding-bottom: 3rem;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+.content-list a {
+  text-decoration: none;
+}
+.main-page {
+  background-color: #ccd5ae;
+  border: 0 #ccd5ae;
+}
+
+/* Style of new post&feedback */
+.post-form {
+  border: #7b8fa1;
+  border-radius: 20px;
+  box-shadow: #fefbe9;
+  border-style: groove;
+  border-width: 0.1rem;
+  padding: 3vh 2vw;
+}
+
+.post-form textarea,
+.feedback-form textarea {
+  height: 15rem;
+  width: 30rem;
+  font-size: 1.2rem;
+}
+.post-form input,
+.feedback-form input {
+  width: 20vw;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+.post-subject {
+  padding-bottom: 2vh;
+}
+
+.feedback-form h5 {
+  margin-bottom: 0.7rem;
+}
+.feedback-form select {
+  font-size: 1.2rem;
+}
+
+/* Style of About Diary */
+.mySlides img {
+  width: 62rem;
+  height: 35rem;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+/* The style of footer */
+footer {
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background-color: #faedcd;
+  min-height: 4.5vh;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+.footer p {
+  font-size: 1rem;
+  color: black;
+  padding-top: 1vh;
+  margin: 0 0 0;
+  text-align: center;
+}

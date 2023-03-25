@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head class="header">
+    <meta charset="utf-8" />
+    <title>My Introduction</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script type="text/Javascript" src="../js/slide.js"></script>
+  </head>
+
+  <body onload="getDate(), showSlides(1)">
+    <!-- nav bar -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <span>&#127774;</span>
+      </div>
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+          <a href="../assignment.html">Assignment</a>
+          <a href="../index.html">Home</a>
+          <a href="aboutdiary.html">About Diary</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="sitemap.html">Site Map</a>
+          <a href="sourcelog.html">Source Log</a>
+          <a href="feedback.html">Feedback</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  -->
+    <div class="information-part1">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../images/bike.jpg" />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../images/foods.jpg" />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../images/hengyang.jpg" />
+          <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <p>&#169; Made by Lingpeng Xiao in 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>

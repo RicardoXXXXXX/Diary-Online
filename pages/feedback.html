@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head class="header">
+    <meta charset="utf-8" />
+    <title>Feedback</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-default">
+      <div class="navbar-brand">
+        <span>&#127774;</span>
+      </div>
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+          <a href="../assignment.html">Assignment</a>
+          <a href="../index.html">Home</a>
+          <a href="aboutdiary.html">About Diary</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="sitemap.html">Site Map</a>
+          <a href="sourcelog.html">Source Log</a>
+          <a href="feedback.html">Feedback</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Feedback form -->
+    <div class="information-part1">
+      <div class="content-form">
+        <div class="feedback-form information-part2">
+          <h2>Your Feedback</h2>
+          <form>
+            <!-- User name input -->
+            <div class="form-group">
+              <h5>Your Name</h5>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required="required"
+              />
+            </div>
+            <!-- User email input -->
+            <div class="form-group">
+              <h5 style="margin-bottom: 0.5rem">Email address</h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+              />
+            </div>
+            <!-- Options -->
+            <div class="form-group">
+              <h5>How do you like this website (From 1 to 5)</h5>
+              <select class="form-control" id="mark">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <!-- User comment input -->
+            <div class="form-group">
+              <h5>Comment</h5>
+              <textarea
+                class="form-control"
+                id="comment"
+                cols="10"
+                rows="6"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-expand">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <p>&#169; Made by Lingpeng Xiao in 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
