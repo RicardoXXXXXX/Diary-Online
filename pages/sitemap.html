@@ -4,14 +4,17 @@
     <meta charset="utf-8" />
     <title>Site Map</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link type="text/css" rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <!-- nav bar -->
     <nav class="navbar navbar-default">
-      <div  class="navbar-brand">
+      <div class="navbar-brand">
         <span>&#127774;</span>
       </div>
       <div class="container">
@@ -19,10 +22,18 @@
           <a href="../assignment.html">Assignment</a>
           <a href="../index.html">Home</a>
           <a href="aboutdiary.html">About Diary</a>
-          <a href="aboutme.html">About Me</a>
-          <a href="sitemap.html">Site Map</a>
-          <a href="sourcelog.html">Source Log</a>
-          <a href="feedback.html">Feedback</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              More
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="aboutme.html">About Me </a>
+              <a href="sitemap.html">Site Map </a>
+              <a href="feedback.html">Feedback</a>
+              <a href="sourcelog.html">Source Log</a>
+            </div>
+          </div>
         </ul>
       </div>
     </nav>
@@ -35,7 +46,19 @@
           <li>
           <a href='../index.html' class="main-page">Home</a>
           </li>
-          
+          <!-- Conponent list in About Diary page -->
+          <li>
+            <a href='aboutdiary.html' class="main-page">
+              About Diary
+            </a>
+            <ul>
+              <li>
+                <a href='aboutdiary.html#slideShow'>
+                  Why write diaries?
+                </a>
+              </li>
+            </ul>
+          </li>
           <!-- Conponent list in About Me page -->
           <li>
             <a href='aboutme.html' class="main-page">
