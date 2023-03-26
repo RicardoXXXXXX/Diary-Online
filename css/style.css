@@ -34,6 +34,7 @@ hr {
   margin-left: 1vw;
 }
 
+/* Make nav bar stick on the top */
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -280,10 +281,6 @@ hr {
   width: 60rem;
   height: 35rem;
 }
-/* 
-.mySlides {
-  display: none;
-} */
 
 /* Slideshow container */
 .mySlides {
@@ -353,7 +350,7 @@ hr {
   bottom: 1rem;
   width: 100%;
 }
-/* The dots/bullets/indicators */
+/* The style of dots */
 .dot {
   cursor: pointer;
   height: 1rem;
