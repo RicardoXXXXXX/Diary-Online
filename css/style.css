@@ -125,10 +125,12 @@ hr {
 
 #hb-content1 {
   margin: 1vh 0 7vh 0;
+  height: 15rem;
 }
 
 #hb-content2 {
   margin: 7vh 0 2vh 0;
+  height: 15rem;
 }
 
 #img1 {
