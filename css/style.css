@@ -246,26 +246,34 @@ hr {
 }
 
 /* Style of new post&feedback */
+#postList {
+  margin-top: 2rem;
+}
+#postList p {
+  margin-bottom: 1rem;
+}
+
 .post-form {
   border: #7b8fa1;
   border-radius: 20px;
   box-shadow: #fefbe9;
   border-style: groove;
   border-width: 0.1rem;
+  width: fit-content;
   padding: 3vh 2vw;
 }
 
 .post-form textarea,
 .feedback-form textarea {
-  height: 15rem;
-  width: 30rem;
-  font-size: 1.2rem;
+  height: 10rem;
+  width: 25rem;
+  font-size: 1rem;
 }
 .post-form input,
 .feedback-form input {
-  width: 20vw;
-  height: 2rem;
-  font-size: 1.2rem;
+  width: 15vw;
+  height: 1.5rem;
+  font-size: 1rem;
 }
 .post-subject {
   padding-bottom: 2vh;

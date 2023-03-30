@@ -9,10 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="text/Javascript" src="js/post.js"></script>
+    <script defer src="js/post.js" type="text/javascript"></script>
   </head>
 
-  <body onload="getDate()">
+  <body onload="printDate()">
     <!-- nav bar -->
     <nav class="navbar">
       <div class="navbar-brand">
@@ -43,17 +43,47 @@
     <div class="information-part1">
       <div class="content-form">
         <div id="date"></div>
-        <hr />
-        <hr />
-        <button
+        
+        <div class="post-form">
+          <div class="form-group">
+            <form id="post">
+              <h3>New Post</h3>
+              <div class="form-group post-subject">
+                <!-- Post subject -->
+                <input
+                  placeholder="Subject"
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  required="required"
+                />
+              </div>
+              <!-- Post content -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="detail"
+                  rows="6"
+                  placeholder="Content"
+                ></textarea>
+              </div>
+            </form>
+            <button class="btn btn-primary btn-expand" onclick="addPost()">
+              + New Post
+            </button>
+          </div>
+        </div>
+        <div id="postList"></div>
+        <!-- <button
           type="button"
           class="btn-expand"
           style="margin-top: 1rem; font-size: 1.2rem"
           onclick="location.href='pages/newpost.html'"
         >
-          + New Post
+          
         </button>
-      </div>
+        <button onclick="printPost()">Read</button>
+      </div> -->
     </div>
 
     <!-- footer -->
