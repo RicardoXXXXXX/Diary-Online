@@ -47,7 +47,7 @@
         <div class="post-form">
           <div class="form-group">
             <form id="post">
-              <h3>New Post</h3>
+              <h3>New Diary</h3>
               <div class="form-group post-subject">
                 <!-- Post subject -->
                 <input
@@ -69,10 +69,48 @@
               </div>
             </form>
             <button class="btn btn-primary btn-expand" onclick="addPost()">
-              + New Post
+              + New Diary
             </button>
           </div>
         </div>
+          <div class="edit-form">
+            <div class="form-group">
+              <form id="editPost">
+                <h3>Edit Diary</h3>
+                <div class="form-group post-subject">
+                  <!-- Post subject -->
+                <input
+                  placeholder="Subject number"
+                  type="number"
+                  class="form-control"
+                  id="order"
+                  required="required"
+                />
+                </div>
+                  <!-- Post subject -->
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    required="required"
+                  />
+                </div>
+                <!-- Post content -->
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="detail"
+                    rows="6"
+                    placeholder="Content"
+                  ></textarea>
+                </div>
+              </form>
+              <button class="btn btn-primary btn-expand" onclick="editPost()">
+                Edit 
+              </button>
+            </div>
+          </div>
         <div id="postList"></div>
         <!-- <button
           type="button"

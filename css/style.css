@@ -152,7 +152,7 @@ hr {
 .content-form {
   font-size: 1.2rem;
   padding: 7vh 20vw 3rem;
-  min-height: 89vh;
+  min-height: fit-content;
   text-align: left;
 }
 
@@ -248,12 +248,17 @@ hr {
 /* Style of new post&feedback */
 #postList {
   margin-top: 2rem;
+  text-align: left;
+  padding: 1vh 20vw;
 }
+
 #postList p {
-  margin-bottom: 1rem;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
 }
 
 .post-form {
+  display: inline-block;
   border: #7b8fa1;
   border-radius: 20px;
   box-shadow: #fefbe9;
@@ -262,6 +267,17 @@ hr {
   width: fit-content;
   padding: 3vh 2vw;
 }
+.edit-form {
+  display: inline-block;
+  border: #7b8fa1;
+  border-radius: 20px;
+  box-shadow: #fefbe9;
+  border-style: groove;
+  border-width: 0.1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 2vw 3vh;
+}
 
 .post-form textarea,
 .feedback-form textarea {
@@ -269,8 +285,16 @@ hr {
   width: 25rem;
   font-size: 1rem;
 }
+
+.edit-form textarea {
+  height: 9rem;
+  width: 25rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
 .post-form input,
-.feedback-form input {
+.feedback-form input,
+.edit-form input {
   width: 15vw;
   height: 1.5rem;
   font-size: 1rem;

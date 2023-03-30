@@ -19,7 +19,7 @@ function printDate() {
 }
 
 //Read and print posts
-//The structure of post
+//The constructor of post
 function Post(date, subject, content) {
   this.date = date;
   this.subject = subject;
@@ -33,19 +33,31 @@ function addPost() {
   let date = getDate();
   let post = new Post(date, input.elements[0].value, input.elements[1].value);
   posts.push(post);
-  console.log("submitted");
   printPost();
 }
 
-//Print posts
+//Edit Post
+function editPost() {
+  const input = document.getElementById("editPost");
+  let date = getDate();
+  let order = input.elements[0].value;
+  let post = new Post(date, input.elements[1].value, input.elements[2].value);
+  posts[order - 1] = post;
+  console.log("Edited");
+  printPost();
+}
+
 //Print posts
 function printPost() {
   //Clear previous posts
   document.getElementById("postList").innerHTML = "";
   //Show posts
   for (i = 0; i < posts.length; i++) {
+    let order = i + 1;
     document.getElementById("postList").innerHTML +=
-      "<hr><h3>" +
+      "<hr><h3>(" +
+      order +
+      ") " +
       posts[i].subject +
       "<span> ---Written at" +
       posts[i].date +
