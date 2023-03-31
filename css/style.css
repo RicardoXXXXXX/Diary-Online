@@ -44,6 +44,7 @@ hr {
   font-size: medium;
   letter-spacing: 0.4rem;
   background-color: #e9edc9;
+  z-index: 2;
 }
 .navbar a {
   text-decoration: none;
@@ -120,30 +121,44 @@ hr {
 #hobbies {
   padding: 1vh 20vw;
   font-size: 1.2rem;
-  min-height: 70vh;
+  min-height: fit-content;
 }
 
 #hb-content1 {
   margin: 1vh 0 7vh 0;
-  height: 15rem;
+  height: fit-content;
+}
+
+#hb-content1 p {
+  padding-top: 7%;
 }
 
 #hb-content2 {
   margin: 7vh 0 2vh 0;
-  height: 15rem;
+  height: 34vh;
+}
+
+#hb-content2 p {
+  padding-top: 9%;
 }
 
 #img1 {
+  max-width: 100%;
+  height: auto;
   float: left;
   margin: 1vh 2vw 1vh 0;
 }
 
 #img2 {
+  max-width: 100%;
+  height: auto;
   float: left;
   margin: 1vh 2vw 0 0;
 }
 
 #img3 {
+  max-width: 100%;
+  height: auto;
   margin: 0 0 0 2vw;
   float: right;
 }
@@ -312,8 +327,9 @@ hr {
 
 /* Style of About Diary */
 .mySlides img {
-  width: 60rem;
-  height: 35rem;
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Slideshow container */
@@ -359,12 +375,12 @@ hr {
   user-select: none;
 }
 .prev {
-  right: 93%;
+  right: 91%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 3%;
+  right: 5%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -424,6 +440,12 @@ hr {
     font-size: 1rem;
   }
 }
+
+/*Image map style */
+#tableImg img {
+  border-radius: 1rem;
+}
+
 /* The style of footer */
 footer {
   width: 100%;
