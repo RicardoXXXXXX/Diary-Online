@@ -62,7 +62,7 @@ function printPost() {
       order +
       ") " +
       posts[i].subject +
-      "<span> ---Written at" +
+      "<span> ---Written at " +
       posts[i].date +
       "</span> </h3>" +
       "<p>" +
