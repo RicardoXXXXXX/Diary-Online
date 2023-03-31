@@ -42,6 +42,11 @@ function editPost() {
   const input = document.getElementById("editPost");
   let date = getDate();
   let order = input.elements[0].value;
+  //Check if the order is valid
+  if (order < 1 || order > posts.length) {
+    alert("Invalid Diary Number!");
+    return;
+  }
   let post = new Post(date, input.elements[1].value, input.elements[2].value); //Generate a new Post.
 
   //Replace current post with the new post.
