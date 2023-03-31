@@ -446,6 +446,35 @@ hr {
   border-radius: 1rem;
 }
 
+/* Image gallery style */
+.gallery-content {
+  padding: 1vh 3vw;
+  font-size: 1.2rem;
+}
+
+.gallery-img * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* The style of footer */
 footer {
   width: 100%;
