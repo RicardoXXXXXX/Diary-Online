@@ -185,13 +185,6 @@ hr {
   padding-bottom: 1vh;
 }
 
-/* Will be used later*/
-/* .edit-btn {
-  font-size: 1.2rem;
-  border-width: 0;
-  margin: 5vh 0 0;
-} */
-
 .btn-expand {
   border-radius: 40%;
   border-color: transparent;
@@ -291,7 +284,7 @@ hr {
   border-width: 0.1rem;
   width: fit-content;
   height: fit-content;
-  padding: 0 2vw 3vh;
+  padding: 1vh 2vw 3vh;
 }
 
 .post-form textarea,

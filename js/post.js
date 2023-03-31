@@ -1,7 +1,7 @@
-//Get time
+//Get time.
 function getDate() {
   const today = new Date();
-
+  //Set time constructure.
   const options = {
     weekday: "long",
     day: "numeric",
@@ -12,46 +12,49 @@ function getDate() {
   return today.toLocaleDateString("en-AU", options);
 }
 
-//Print date
+//Print date.
 function printDate() {
   document.getElementById("date").innerHTML =
     "<h2> Today is " + getDate() + "</h2>" + "<h3>How is your day?</h3>";
 }
 
-//Read and print posts
-//The constructor of post
+//Read and print posts.
+//The constructor of post.
 function Post(date, subject, content) {
   this.date = date;
   this.subject = subject;
   this.content = content;
 }
 
-//Store posts
-const posts = []; //Array of post
+//Store posts.
+const posts = []; //Array of post.
 function addPost() {
   const input = document.getElementById("post");
   let date = getDate();
-  let post = new Post(date, input.elements[0].value, input.elements[1].value);
+  let post = new Post(date, input.elements[0].value, input.elements[1].value); //Generate a new Post.
+  //Add new post to posts[].
   posts.push(post);
   printPost();
 }
 
-//Edit Post
+//Edit Post.
 function editPost() {
   const input = document.getElementById("editPost");
   let date = getDate();
   let order = input.elements[0].value;
-  let post = new Post(date, input.elements[1].value, input.elements[2].value);
+  let post = new Post(date, input.elements[1].value, input.elements[2].value); //Generate a new Post.
+
+  //Replace current post with the new post.
   posts[order - 1] = post;
   console.log("Edited");
   printPost();
 }
 
-//Print posts
+//Print posts.
 function printPost() {
-  //Clear previous posts
+  //Clear previous posts.
   document.getElementById("postList").innerHTML = "";
-  //Show posts
+  //Show posts.
   for (i = 0; i < posts.length; i++) {
     let order = i + 1;
     document.getElementById("postList").innerHTML +=
