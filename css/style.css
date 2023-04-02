@@ -25,32 +25,6 @@ hr {
 }
 
 /* Style of nav bar */
-.container {
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-}
-
-.container a {
-  margin-left: 1vw;
-}
-
-/* Make nav bar stick on the top */
-.navbar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  border: 0;
-  margin-bottom: 0;
-  font-size: medium;
-  letter-spacing: 0.4rem;
-  background-color: #e9edc9;
-  z-index: 2;
-}
-.navbar a {
-  text-decoration: none;
-  color: #4e6e81;
-}
-
 .navbar-brand {
   font-size: 3rem;
   float: left;
@@ -58,60 +32,68 @@ hr {
   padding-left: 10vw;
 }
 
-/* The dropdown container */
-.dropdown {
+.navbar {
   overflow: hidden;
-  float: right;
+  background-color: #e9edc9;
 }
 
-/* Dropdown button */
+/* The dropdown container */
+.dropdown {
+  float: right;
+  margin-right: 10vw;
+  overflow: hidden;
+}
+.navbar-right {
+  margin-right: 10vw;
+}
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: #4e6e81;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .dropdown .dropbtn {
-  font-size: 1rem;
-  padding: 0;
+  font-size: 16px;
   border: none;
   outline: none;
   color: #4e6e81;
+  padding: 14px 16px;
   background-color: inherit;
+  font-family: inherit;
   margin: 0;
 }
 
-.dropbtn,
-.dropdown-content {
-  position: absolute;
-  right: 10vw;
-}
-
-.dropdown:hover .dropbtn,
-.nav a:hover {
-  /* background-color: #4e6e81; */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   color: #94af9f;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  top: 65%;
+  position: absolute;
   background-color: #e9edc9;
-  min-width: auto;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links inside the dropdown style*/
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 1rem 0;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
-
 /* Add a blue background color to dropdown links on hover */
 .dropdown-content a:hover {
   color: #4e6e81;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;

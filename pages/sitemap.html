@@ -5,123 +5,99 @@
     <title>Site Map</title>
     <meta charset="utf-8" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link type="text/css" rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar">
       <div class="navbar-brand">
         <span>&#127774;</span>
       </div>
       <div class="container">
+        <div class="dropdown">
+          <button class="dropbtn">
+            More
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="aboutme.html">About Me </a>
+            <a href="sitemap.html">Site Map </a>
+            <a href="feedback.html">Feedback</a>
+            <a href="sourcelog.html">Source Log</a>
+          </div>
+        </div>
         <ul class="nav navbar-nav navbar-right">
           <a href="../assignment.html">Assignment</a>
-          <a href="../index.html">Home</a>
           <a href="aboutdiary.html">About Diary</a>
-          <div class="dropdown">
-            <button class="dropbtn">
-              More
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="aboutme.html">About Me </a>
-              <a href="sitemap.html">Site Map </a>
-              <a href="feedback.html">Feedback</a>
-              <a href="sourcelog.html">Source Log</a>
-            </div>
-          </div>
+          <a href="../index.html">Home</a>
         </ul>
       </div>
     </nav>
-
     <!-- Site map list -->
     <div class="information-part1">
       <div class="content-list">
         <h1>Site Map</h1>
         <ul>
           <li>
-            <a href='../index.html' class="main-page">
-              Home
-            </a>
+            <a href="../index.html" class="main-page"> Home </a>
             <ul>
               <li>
-                <a href='../index.html'>
-                  New Diary Form
-                </a>
+                <a href="../index.html"> New Diary Form </a>
               </li>
               <li>
-                <a href='../index.html' >
-                  Edit Diary Form
-                </a>
+                <a href="../index.html"> Edit Diary Form </a>
               </li>
-              <li>
-                Diary List
-              </li>
+              <li>Diary List</li>
             </ul>
           </li>
           <!-- Conponent list in About Diary page -->
           <li>
-            <a href='aboutdiary.html' class="main-page">
-              About Diary
-            </a>
+            <a href="aboutdiary.html" class="main-page"> About Diary </a>
             <ul>
               <li>
-                <a href='aboutdiary.html#slideShow'>
-                  Why write diaries?
-                </a>
+                <a href="aboutdiary.html#slideShow"> Why write diaries? </a>
               </li>
               <li>
-                <a href='aboutdiary.html#tableImg'>
+                <a href="aboutdiary.html#tableImg">
                   What you need for creating a diary?
                 </a>
               </li>
               <li>
-                <a href='aboutdiary.html#tableImg'>
-                  Type of Diary
-                </a>
+                <a href="aboutdiary.html#tableImg"> Type of Diary </a>
               </li>
             </ul>
           </li>
           <!-- Conponent list in About Me page -->
           <li>
-            <a href='aboutme.html' class="main-page">
-              About Me
-            </a>
+            <a href="aboutme.html" class="main-page"> About Me </a>
             <ul>
               <li>
-                <a href='aboutme.html#hometown'>
-                  My hometown
-                </a>
+                <a href="aboutme.html#hometown"> My hometown </a>
               </li>
               <li>
-                  <a href='aboutme.html#hobbies'>
-                    My Hobbies
-                </a>
+                <a href="aboutme.html#hobbies"> My Hobbies </a>
               </li>
               <li>
-                <a href='aboutme.html#goals'>
-                  My passion and goals
-                </a>
+                <a href="aboutme.html#goals"> My passion and goals </a>
               </li>
             </ul>
           </li>
 
           <li>
-            <a href='sourcelog.html' class="main-page">
-              Source Log
-            </a>
+            <a href="sourcelog.html" class="main-page"> Source Log </a>
           </li>
 
           <li>
             <a onclick="location.href='feedback.html'" class="main-page">
               Feedback
-            </a>        
+            </a>
           </li>
         </ul>
+      </div>
     </div>
 
     <!-- footer -->
