@@ -72,7 +72,7 @@ hr {
   outline: none;
   color: #4e6e81;
   background-color: inherit;
-  margin: 0; /* Important for vertical align on mobile phones */
+  margin: 0;
 }
 
 .dropbtn,
@@ -167,8 +167,7 @@ hr {
 .content-form {
   font-size: 1.2rem;
   padding: 7vh 20vw 3rem;
-  min-height: fit-content;
-  text-align: left;
+  min-height: 80vh;
 }
 
 .information-part1 {
@@ -253,11 +252,11 @@ hr {
   border: 0 #ccd5ae;
 }
 
-/* Style of new post&feedback */
+/* Style of New Post & Edit Post & Feedback forms */
 #postList {
   margin-top: 2rem;
   text-align: left;
-  padding: 1vh 20vw;
+  padding: 1vh 5vw;
 }
 
 #postList p {
@@ -303,7 +302,7 @@ hr {
 .post-form input,
 .feedback-form input,
 .edit-form input {
-  width: 15vw;
+  width: 25rem;
   height: 1.5rem;
   font-size: 1rem;
 }

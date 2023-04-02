@@ -39,11 +39,11 @@
       </div>
     </nav>
 
-    <!-- Post List, added psot will be displayed here -->
+    <!-- Diary section -->
     <div class="information-part1">
       <div class="content-form">
         <div id="date"></div>
-        
+
         <div class="post-form">
           <div class="form-group">
             <form id="post">
@@ -73,12 +73,12 @@
             </button>
           </div>
         </div>
-          <div class="edit-form">
-            <div class="form-group">
-              <form id="editPost">
-                <h3>Edit Diary</h3>
-                <div class="form-group post-subject">
-                  <!-- Post subject -->
+        <div class="edit-form">
+          <div class="form-group">
+            <form id="editPost">
+              <h3>Edit Diary</h3>
+              <div class="form-group post-subject">
+                <!-- Post subject -->
                 <input
                   placeholder="Diary number"
                   type="number"
@@ -86,32 +86,36 @@
                   id="order"
                   required="required"
                 />
-                </div>
-                  <!-- Post subject -->
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    required="required"
-                  />
-                </div>
-                <!-- Post content -->
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="detail"
-                    rows="6"
-                    placeholder="Content"
-                  ></textarea>
-                </div>
-              </form>
-              <button class="btn btn-primary btn-expand" onclick="editPost()">
-                Edit 
-              </button>
-            </div>
+              </div>
+
+              <!-- Post subject -->
+              <div class="form-group">
+                <input
+                  placeholder="Subject"
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  required="required"
+                />
+              </div>
+              <!-- Post content -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="detail"
+                  rows="6"
+                  placeholder="Content"
+                ></textarea>
+              </div>
+            </form>
+            <button class="btn btn-primary btn-expand" onclick="editPost()">
+              Edit
+            </button>
           </div>
+        </div>
+        <!-- Post List, added psot will be displayed here -->
         <div id="postList"></div>
+      </div>
     </div>
 
     <!-- footer -->
