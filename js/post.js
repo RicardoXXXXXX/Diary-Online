@@ -31,6 +31,12 @@ const posts = []; //Array of post.
 function addPost() {
   const input = document.getElementById("post");
   let date = getDate();
+  //Check is subject is empty
+  if (input.elements[0].value == "") {
+    alert("Subject cannot be empty!");
+    return;
+  }
+
   let post = new Post(date, input.elements[0].value, input.elements[1].value); //Generate a new Post.
   //Add new post to posts[].
   posts.push(post);
@@ -47,6 +53,12 @@ function editPost() {
     alert("Invalid Diary Number!");
     return;
   }
+  //Check is subject is empty
+  if (input.elements[1].value == "") {
+    alert("Subject cannot be empty!");
+    return;
+  }
+
   let post = new Post(date, input.elements[1].value, input.elements[2].value); //Generate a new Post.
 
   //Replace current post with the new post.
