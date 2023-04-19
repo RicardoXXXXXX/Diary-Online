@@ -31,7 +31,8 @@ const posts = []; //Array of post.
 function addPost() {
   const input = document.getElementById("post");
   let date = getDate();
-  //Check is subject is empty
+  //Check is subject is empty.
+  //If so, show error message, don't make chanegs.
   if (input.elements[0].value == "") {
     alert("Subject cannot be empty!");
     return;
@@ -49,11 +50,13 @@ function editPost() {
   let date = getDate();
   let order = input.elements[0].value;
   //Check if the order is valid
+  //If invalid, show error message, don't make chanegs.
   if (order < 1 || order > posts.length) {
     alert("Invalid Diary Number!");
     return;
   }
   //Check is subject is empty
+  //If so, show error message, don't make chanegs.
   if (input.elements[1].value == "") {
     alert("Subject cannot be empty!");
     return;
