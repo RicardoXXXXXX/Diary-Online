@@ -90,3 +90,68 @@ function printPost() {
       "</p> ";
   }
 }
+
+//Read and store user feedback
+//The constructor of feedback.
+function Feedback(name, email, likeMark, recMark, reason, advise) {
+  this.name = name;
+  this.email = email;
+  this.likeMark = likeMark;
+  this.recMark = recMark;
+  this.reason = reason;
+  this.advise = advise;
+}
+
+//Store feedback.
+const feedback = []; //Array of feedback.
+function addFeedback() {
+  const input = document.getElementById("feedback");
+  //Generate a new Feedback.
+  let singleFeedback = new Feedback(
+    input.elements[0].value,
+    input.elements[1].value,
+    input.elements[2].value,
+    input.elements[3].value,
+    input.elements[4].value,
+    input.elements[5].value
+  );
+  //Add new feedback to feedback[].
+  feedback.push(singleFeedback);
+  printFeedback();
+}
+
+//Print the feedback list.
+function printFeedback() {
+  //Clear previous feedback list.
+  document.getElementById("feedbackList").innerHTML = "";
+  //Show feedback list. Only display the non-empty content.
+  for (i = 0; i < feedback.length; i++) {
+    let order = i + 1;
+    document.getElementById("feedbackList").innerHTML +=
+      "<hr><h3>(" + order + ")  </h3>";
+    if (feedback[i].name) {
+      document.getElementById("feedbackList").innerHTML +=
+        "<h4>Name: " + feedback[i].name;
+    }
+    if (feedback[i].email) {
+      document.getElementById("feedbackList").innerHTML +=
+        "<h4> Email: " + feedback[i].email + "</h4>";
+    }
+    if (feedback[i].likeMark) {
+      document.getElementById("feedbackList").innerHTML +=
+        "<h5>Like Mark: " + feedback[i].likeMark + "</h5>";
+    }
+    if (feedback[i].recMark) {
+      document.getElementById("feedbackList").innerHTML +=
+        "<h5>Recommand Mark: " + feedback[i].recMark + "</h5>";
+    }
+    if (feedback[i].reason) {
+      document.getElementById("feedbackList").innerHTML +=
+        "<h5>Reason:" + feedback[i].reason + "</h5>";
+    }
+    if (feedback[i].advise) {
+      document.getElementById("feedbackList").innerHTML +=
+        "<h5>Advise: " + feedback[i].advise + "</h5>";
+    }
+  }
+}

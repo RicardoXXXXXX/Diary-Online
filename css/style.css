@@ -303,6 +303,11 @@ hr {
   font-size: 1.2rem;
 }
 
+#feedbackList h5 {
+  padding-bottom: 2vh;
+  margin: 0;
+}
+
 /* Style of About Diary */
 .mySlides img {
   border-radius: 1rem;
