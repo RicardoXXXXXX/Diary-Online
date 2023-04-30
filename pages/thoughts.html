@@ -3,12 +3,13 @@
   <head class="header">
     <meta charset="utf-8" />
     <title>Thoughts</title>
-    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script src="../js/changeStyle.js" type="text/javascript"></script>
   </head>
 
   <body onload="getDate()">
@@ -40,6 +41,9 @@
 
     <!-- The benifit of diary (thoughts orgnization) page-->
     <div class="information-part1">
+      <button id="changeCssBtn" onclick="changeStyle(0)">
+        Activate Dark Mode
+      </button>
       <div class="content-slide">
         <h2>Keep your thoughts organized</h2>
         <img src="../images/thoughts.png" width="810" height="472rem" />

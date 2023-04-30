@@ -3,7 +3,6 @@
   <head class="header">
     <meta charset="utf-8" />
     <title>Home</title>
-    <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -11,6 +10,7 @@
     />
     <!-- for <script> tag, no need to add type attribute -->
     <script defer src="js/slide.js" type="text/javascript"></script>
+    <script src="js/changeStyle.js" type="text/javascript"></script>
   </head>
 
   <body onload="showSlides(1)">
@@ -42,6 +42,9 @@
 
     <!-- Slideshow of why write diary -->
     <div class="information-part1">
+      <button id="changeCssBtn" onclick="changeHomeStyle(0)">
+        Activate Dark Mode
+      </button>
       <div class="slideshow-container" id="slideShow">
         <h1>Why write diaries?</h1>
         <div class="mySlides fade">

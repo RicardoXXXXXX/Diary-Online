@@ -34,7 +34,7 @@ hr {
 
 .navbar {
   overflow: hidden;
-  background-color: #e9edc9;
+  background-color: black;
 }
 
 /* The dropdown container */
@@ -49,7 +49,7 @@ hr {
 .navbar a {
   float: right;
   font-size: 16px;
-  color: #4e6e81;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -59,7 +59,7 @@ hr {
   font-size: 16px;
   border: none;
   outline: none;
-  color: #4e6e81;
+  color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -68,14 +68,14 @@ hr {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  color: #94af9f;
+  color: #7f8487;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #e9edc9;
+  background-color: #2b2b2b;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -84,7 +84,7 @@ hr {
 /* Links inside the dropdown style*/
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -92,7 +92,7 @@ hr {
 }
 /* Add a blue background color to dropdown links on hover */
 .dropdown-content a:hover {
-  color: #4e6e81;
+  color: #7f8487;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -102,9 +102,9 @@ hr {
 #changeCssBtn {
   font-size: medium;
   border-radius: 5px;
-  border: transparent;
+  border: white;
   color: white;
-  background-color: #4e6e81;
+  background-color: #454545;
   position: absolute;
   top: 7%;
   left: 10%;
@@ -168,11 +168,13 @@ hr {
 }
 
 .information-part1 {
-  background-color: #fefae0;
+  background-color: #0f0e0e;
+  color: white;
 }
 
 .information-part2 {
-  background-color: #fefbe9;
+  background-color: #171717;
+  color: white;
 }
 
 .information-part2 ul {
@@ -184,8 +186,8 @@ hr {
 .btn-expand {
   border-radius: 40%;
   border-color: transparent;
-  color: #00204a;
-  background-color: #93bfcf;
+  color: white;
+  background-color: #7f8487;
   font-size: 1.2rem;
   padding-bottom: 0.1rem;
   border-width: 0;
@@ -199,7 +201,7 @@ hr {
 }
 
 .feedback-form {
-  border: #7b8fa1;
+  border: #7f8487;
   border-radius: 20px;
   box-shadow: #fefbe9;
   border-style: groove;
@@ -228,7 +230,7 @@ hr {
   text-align: center;
 }
 .table th {
-  background-color: #f2f2f2;
+  background-color: #171717;
 }
 
 /* Style of list */
@@ -386,8 +388,8 @@ hr {
 
 /* Caption text */
 .text {
-  background-color: #fefae0;
-  color: #413543;
+  background-color: #0f0e0e;
+  color: white;
   font-size: 1.5rem;
   padding: 0.5rem 0.1rem;
   position: absolute;
@@ -500,7 +502,7 @@ footer {
   width: 100%;
   text-align: center;
   bottom: 0;
-  background-color: #faedcd;
+  background-color: #0f0e0e;
   min-height: 4.5vh;
 }
 
@@ -509,7 +511,7 @@ footer {
 }
 .footer p {
   font-size: 1rem;
-  color: black;
+  color: white;
   padding-top: 1vh;
   margin: 0 0 0;
   text-align: center;
