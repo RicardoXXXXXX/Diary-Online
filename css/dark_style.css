@@ -503,6 +503,15 @@ hr {
   display: table;
 }
 
+#socialMedia {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  padding-left: 35%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 /* The style of footer */
 footer {
   width: 100%;
