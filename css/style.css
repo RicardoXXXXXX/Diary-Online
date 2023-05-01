@@ -106,19 +106,25 @@ hr {
   color: white;
   background-color: #4e6e81;
   position: absolute;
-  top: 7%;
+  top: 10%;
   left: 10%;
 }
 
 /* Style of About Me */
 #hometown {
-  height: 43vh;
+  height: fit-content;
+  margin-bottom: 2rem;
+  padding-bottom: 10rem;
 }
 
 #hobbies {
   padding: 1vh 20vw;
+  margin-bottom: 5rem;
   font-size: 1.2rem;
-  min-height: fit-content;
+  height: fit-content;
+}
+#goals {
+  margin-top: 10rem;
 }
 
 #hb-content1 {
