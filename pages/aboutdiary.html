@@ -9,8 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <script defer src="../js/post.js" type="text/javascript"></script>
-    <script src="../js/changeStyle.js" type="text/javascript"></script>
+    <script defer src="../js/post.js"></script>
+    <script src="../js/changeStyle.js"></script>
   </head>
 
   <body onload="printDate()">
@@ -33,12 +33,12 @@
             <a href="sourcelog.html">Source Log</a>
           </div>
         </div>
-        <ul class="navbar-nav navbar-right">
+        <div class="navbar-nav navbar-right">
           <a href="../assignment.html">Assignment</a>
           <a href="social.html">Social Media</a>
           <a href="aboutdiary.html">Write Diaries</a>
           <a href="../index.html">Home</a>
-        </ul>
+        </div>
       </div>
     </nav>
     <!-- Diary section -->
@@ -99,7 +99,7 @@
                   placeholder="Subject"
                   type="text"
                   class="form-control"
-                  id="subject"
+                  id="newSubject"
                   required="required"
                 />
               </div>
@@ -107,7 +107,7 @@
               <div class="form-group">
                 <textarea
                   class="form-control"
-                  id="detail"
+                  id="newDetail"
                   rows="6"
                   placeholder="Content"
                 ></textarea>

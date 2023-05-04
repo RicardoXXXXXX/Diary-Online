@@ -209,7 +209,6 @@ hr {
 .feedback-form {
   border: #7f8487;
   border-radius: 20px;
-  box-shadow: #fefbe9;
   border-style: groove;
   border-width: 0.1rem;
   padding: 3vh 5vw;
@@ -273,7 +272,6 @@ hr {
   display: inline-block;
   border: #7b8fa1;
   border-radius: 20px;
-  box-shadow: #fefbe9;
   border-style: groove;
   border-width: 0.1rem;
   width: fit-content;
@@ -283,7 +281,6 @@ hr {
   display: inline-block;
   border: #7b8fa1;
   border-radius: 20px;
-  box-shadow: #fefbe9;
   border-style: groove;
   border-width: 0.1rem;
   width: fit-content;
@@ -444,7 +441,7 @@ hr {
 }
 
 /*Image map style */
-#tableImg img {
+#tableGallery img {
   border-radius: 1rem;
 }
 
