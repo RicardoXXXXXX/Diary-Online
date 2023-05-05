@@ -99,6 +99,22 @@ hr {
   display: block;
 }
 
+/* Add parallax effect */
+.parallax {
+  /* The image used */
+  background-image: url("../images/background.png");
+
+  /* Set a specific height */
+  min-height: 1080px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 #changeCssBtn {
   font-size: medium;
   border-radius: 5px;
