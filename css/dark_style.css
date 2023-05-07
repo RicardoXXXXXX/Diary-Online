@@ -459,7 +459,9 @@ hr {
 /*Image map style */
 #tableGallery img {
   border-radius: 1rem;
+  width: 75%;
 }
+
 
 /* Image gallery style */
 .gallery-content {
@@ -481,6 +483,7 @@ hr {
 .column img {
   opacity: 1;
   transition: ease 0.5s;
+  width: 100%;
 }
 .column:hover img {
   opacity: 0.2;
