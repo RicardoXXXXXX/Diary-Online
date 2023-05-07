@@ -15,7 +15,7 @@ function getDate() {
 //Print date.
 function printDate() {
   document.getElementById("date").innerHTML =
-    "<h2> Today is " + getDate() + "</h2>" + "<h3>How is your day?</h3>";
+    "<h2> Today is " + getDate() + "</h2>" + "<h3>Ready to write something?</h3>";
 }
 
 //Read and print posts.
