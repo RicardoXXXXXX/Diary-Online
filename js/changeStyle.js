@@ -13,6 +13,7 @@ function changeStyle(cssLinkIndex) {
     newlink.setAttribute("href", "../css/dark_style.css");
     cuurentStyle = 1; //Change the css file statement.
     document.getElementById("changeCssBtn").innerHTML = "Activate Light Mode"; //Change the button content.
+    document.getElementsByClassName("navbar-brand")[0].innerHTML = "<span>&#127773;</span>";  //Change the logo to moon.
   }
   //If the current css file is the dark one, add the original css file address as the new link.
   else if (cuurentStyle == 1) {
@@ -22,6 +23,7 @@ function changeStyle(cssLinkIndex) {
     newlink.setAttribute("href", "../css/style.css");
     cuurentStyle = 0; //Change the css file statement
     document.getElementById("changeCssBtn").innerHTML = "Activate Dark Mode"; //Change the button content.
+    document.getElementsByClassName("navbar-brand")[0].innerHTML = "<span>&#127774;</span>";  //Change the logo to sun.
   }
 
   //Apply the new css file.
@@ -42,6 +44,7 @@ function changeHomeStyle(cssLinkIndex) {
     newlink.setAttribute("href", "css/dark_style.css");
     cuurentStyle = 1; //Change the css file statement.
     document.getElementById("changeCssBtn").innerHTML = "Activate Light Mode"; //Change the button content.
+    document.getElementsByClassName("navbar-brand")[0].innerHTML = "<span>&#127773;</span>";  //Change the logo to moon.
   }
   //If the current css file is the dark one, add the original css file address as the new link.
   else if (cuurentStyle == 1) {
@@ -51,6 +54,7 @@ function changeHomeStyle(cssLinkIndex) {
     newlink.setAttribute("href", "css/style.css");
     cuurentStyle = 0; //Change the css file statement.
     document.getElementById("changeCssBtn").innerHTML = "Activate Dark Mode"; //Change the button content.
+    document.getElementsByClassName("navbar-brand")[0].innerHTML = "<span>&#127774;</span>";  //Change the logo to sun.
   }
   //Apply the new css file.
   document
